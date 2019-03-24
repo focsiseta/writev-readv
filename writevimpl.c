@@ -22,6 +22,10 @@ int creadv(int _fd,const Shatter *mirror,int counter);
 
 int main(int argc, char const *argv[])
 {
+    if(argc != 2){
+        perror("Wrong args: use ./write <file to open>");
+        exit(EXIT_FAILURE);
+    }
     int _fd = open(argv[1],O_RDONLY,0777);
     if(_fd == -1){
         perror("File does not exist");
