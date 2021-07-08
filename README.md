@@ -1,2 +1,2 @@
 # writev-readv
-Reimplementing writev and readv with the systemcalls read and write
+Reimplementing writev and readv with sys-calls read and write
